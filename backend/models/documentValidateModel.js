@@ -6,4 +6,4 @@ const documentValidateSchema = new mongoose.Schema({
     
 })
 
-module.exports = mongoose.model("document validate", documentValidateSchema)
+module.exports = mongoose.model("DocumentValidate", documentValidateSchema)

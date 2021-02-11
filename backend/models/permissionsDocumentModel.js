@@ -1,13 +1,13 @@
 const permissionsDocumentSchema = new mongoose.Schema({
     
   
-    acteur_id : {type : String, required: true},
-    document_id : {type:  String , required: true},
-    permission : {type:  String , required: true},
-    etat : {type:  String , required: true},
-    date_affectation : {type:  Date , required: true},
-    date_demande : {type:  Date , required: true},
+    acteur_id : {type : String},
+    document_id : {type:  String },
+    permission : {type:  String },
+    etat : {type:  String },
+    date_affectation : {type:  Date },
+    date_demande : {type:  Date },
     
 })
 
-module.exports = mongoose.model("Permission Document", permissionsDocumentSchema)
+module.exports = mongoose.model("PermissionDocument", permissionsDocumentSchema)
