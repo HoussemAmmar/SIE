@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
 
-const acteurMoraleSchema = new mongoose.Schema({
+
+
+const acteurSchema = new mongoose.Schema({
     
 
     email : {type : String},
@@ -18,4 +20,4 @@ const acteurMoraleSchema = new mongoose.Schema({
     
 })
 
-module.exports = mongoose.model("ActeurMorale", acteurMoraleSchema)
+module.exports = mongoose.model("Acteur", acteurSchema)

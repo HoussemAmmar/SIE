@@ -1,14 +1,17 @@
 const mongoose = require('mongoose')
 
+const Schema = mongoose.Schema
+const ObjectId = Schema.Types.ObjectId
+
 const documentSchema = new mongoose.Schema({
     
     url_document : {type : String},
-    acteur_id : {type : String},
-    admin_id : {type:  String },
-    type_access_id : {type:  String },
-    etat : {type:  String },
-    date_creation : {type:  Date },
-    date_validation : {type:  Date },
+    acteur_id : {type : ObjectId},
+    admin_id : {type:  ObjectId },
+    type_access_id : {type:  ObjectId },
+    etat : {type:  Number },
+    date_creation : {type:  Number },
+    date_validation : {type:  Number },
     
 })
 

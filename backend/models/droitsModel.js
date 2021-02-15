@@ -1,5 +1,7 @@
 const mongoose = require('mongoose')
 
+
+
 const droitSchema = new mongoose.Schema({
     
     droit : {type : String},  
